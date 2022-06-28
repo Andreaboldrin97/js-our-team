@@ -8,7 +8,7 @@ const team = [
     },
     {
         name : `Angela Caroll`,
-        ruole : `Chief Editor`,
+        role : `Chief Editor`,
         img : `angela-caroll-chief-editor.jpg`
     },
     {
