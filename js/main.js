@@ -32,11 +32,6 @@ const team = [
         img : `barbara-ramos-graphic-designer.jpg`
     },
     {
-        name : `Barbara Ramos`,
-        role : `Graphic Designer`,
-        img : `barbara-ramos-graphic-designer.jpg`
-    },
-    {
         name : `Luigi Micco`,
         role : `tutor boolean`,
         img : `luigiMicco.jpeg`
@@ -45,6 +40,11 @@ const team = [
         name : `Stefano Cappellini`,
         role : `tutor boolean`,
         img : `stefanoCappellini.jpeg`
+    },
+    {
+        name : `Riccardo Petricca`,
+        role : `teacher boolean`,
+        img : `riccardoPetricca.jpeg`
     },
 ];
 
