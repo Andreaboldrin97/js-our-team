@@ -63,7 +63,7 @@ for( let i = 0 ; i < team.length ; i++ ){
     card.classList.add('col-4');
 
     //! creo il contenuto HTML con un Template literals 
-    card.innerHTML+= (
+    card.innerHTML= 
                     ` <div class="card m-3">
                         <img src="./img/${team[i].img}" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -71,7 +71,7 @@ for( let i = 0 ; i < team.length ; i++ ){
                             <p class="card-text">${team[i].role} </p>
                         </div>
                     </div> `
-                            );
+                            ;
     //! appendo l'elemento creato
     cardContein.append(card);
     
