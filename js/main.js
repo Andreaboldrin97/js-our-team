@@ -24,19 +24,53 @@ const team = [
     {
         name : `Scott Estrada`,
         role : `Developer`,
-        img : `  scott-estrada-developer.jpg`
+        img : `scott-estrada-developer.jpg`
     },
     {
         name : `Barbara Ramos`,
         role : `Graphic Designer`,
-        img : ` barbara-ramos-graphic-designer.jpg`
+        img : `barbara-ramos-graphic-designer.jpg`
     },
-]
+];
+
+//? recupero l'elemento cards(contenitore delle card)
+let cardContein = document.getElementById('card');
 
 
 //* creo un ciclo for dell'array per vedere index di ogni oggetto
 for( let i = 0 ; i < team.length ; i++ ){
     
+    //porto in console il nome il ruolo e l'img di ogni elemento del team
+    console.log(`nome (${team[i].name}) ruolo (${team[i].role}) img (${team[i].img})`)
+
+    //! creo un elemento div
+    let card = document.createElement('div');
+    card.classList.add('col-4');
+
+    //! creo il contenuto HTML con un Template literals 
+    card.innerHTML+= (
+                    ` <div class="card m-3">
+                        <img src="./img/${team[i].img}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">${team[i].name} </h5>
+                            <p class="card-text">${team[i].role} </p>
+                        </div>
+                    </div> `
+                            );
+    //! appendo l'elemento creato
+    cardContein.append(card);
     
-    console.log(`nome ${team[i].name} ruolo ${team[i].role} img ${team[i].img}`)
 };
+
+
+// elemento per creare una card preso da bootstrap
+
+{/* <div class="card">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div> */}
+
+
+
