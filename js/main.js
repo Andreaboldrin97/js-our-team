@@ -31,6 +31,10 @@ const team = [
         role : `Graphic Designer`,
         img : `barbara-ramos-graphic-designer.jpg`
     },
+    
+];
+
+team.push(
     {
         name : `Luigi Micco`,
         role : `tutor boolean`,
@@ -46,7 +50,7 @@ const team = [
         role : `teacher boolean`,
         img : `riccardoPetricca.jpeg`
     },
-];
+)
 
 //? recupero l'elemento cards(contenitore delle card)
 let cardContein = document.getElementById('card');
